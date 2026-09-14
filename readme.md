@@ -12,16 +12,36 @@ The goal for this project is to replace all machine-generated code with equivale
 ### Linux
 
 Have these dependencies installed:
+- CMake >= 3.21
 - Clang >= 20
 - SDL3 >= 3.4.2
 - OpenGL 4.6
 - OpenAL 1.1
 
-Then run `make` in the project directory. This will generate the executable `smb`
+Then configure and build with CMake:
 
-### Windows
+```sh
+CC=clang-20 cmake -S . -B build
+cmake --build build
+./build/smb
+```
 
-Windows is not currently supported, but it will be in the future!
+### Windows (Visual Studio)
+
+Have these dependencies installed:
+- CMake >= 3.21
+- Visual Studio >= 18 2026
+- Clang CL >= 20
+- OpenGL 4.6
+
+Then configure and build with CMake:
+```powershell
+cmake -S . -B build -G "Visual Studio 18 2026" -T ClangCL
+cmake --build build
+./build/Debug/smb.exe
+```
+
+Other versions of visual studio are likely to work as well.
 
 ## How it works
 

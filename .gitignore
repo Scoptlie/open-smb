@@ -5,5 +5,5 @@
 !source/**
 !thirdparty/**
 !.gitignore
-!makefile
+!CMakeLists.txt
 !readme.md
