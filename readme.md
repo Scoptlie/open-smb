@@ -41,7 +41,7 @@ cmake --build build
 ./build/Debug/smb.exe
 ```
 
-Other versions of visual studio are likely to work as well.
+Other versions of visual studio are likely to work as well, but not guaranteed.
 
 ## How it works
 
