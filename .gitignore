@@ -1,0 +1,9 @@
+
+*
+!*/
+
+!source/**
+!thirdparty/**
+!.gitignore
+!makefile
+!readme.md
