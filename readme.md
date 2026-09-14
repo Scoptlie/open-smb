@@ -47,13 +47,13 @@ Other versions of visual studio are likely to work as well.
 
 All of the game's code runs in pure native C. As of now, it is still very close to the disassembly.
 
-It is supported by a C runtime that includes global variables for 6502 registers, RAM, and a full copy of the original ROM's PRG section (see [source/compat.c]()). The original PRG section is only present for read-only data, no code from it is executed.
+It is supported by a C runtime that includes global variables for 6502 registers, RAM, and a full copy of the original ROM's PRG section (see [source/compat.c](https://github.com/Scoptlie/open-smb/blob/main/source/compat.c)). The original PRG section is only present for read-only data, no code from it is executed.
 
-The C runtime also emulates the NES audio, video, and controller input components (see [source/env.c]()).
+The C runtime also emulates the NES audio, video, and controller input components (see [source/env.c](https://github.com/Scoptlie/open-smb/blob/main/source/env.c)).
 
 ## Translator
 
-The translator that generated the original C code is in [this repository]().
+The translator that generated the original C code is in [this repository](https://github.com/Scoptlie/open-smb-translator).
 
 ## Acknowledgements
 
